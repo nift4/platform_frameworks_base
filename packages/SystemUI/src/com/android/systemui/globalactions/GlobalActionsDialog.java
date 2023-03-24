@@ -70,6 +70,7 @@ import com.android.internal.view.RotationPolicy;
 import com.android.internal.widget.LockPatternUtils;
 import com.android.keyguard.KeyguardUpdateMonitor;
 import com.android.systemui.animation.DialogLaunchAnimator;
+import com.android.systemui.animation.Expandable;
 import com.android.systemui.animation.Interpolators;
 import com.android.systemui.broadcast.BroadcastDispatcher;
 import com.android.systemui.colorextraction.SysuiColorExtractor;
@@ -361,7 +362,7 @@ public class GlobalActionsDialog extends GlobalActionsDialogLite
     }
 
     @Override
-    protected void handleShow(View v) {
+    protected void handleShow(Expandable v) {
         seedFavorites();
         super.handleShow(null);
     }
