@@ -51,7 +51,6 @@ import javax.inject.Inject
 open class ControlsEditingActivity @Inject constructor(
     @Main private val mainExecutor: Executor,
     private val controller: ControlsControllerImpl,
-    private val broadcastDispatcher: BroadcastDispatcher,
     private val globalActionsComponent: GlobalActionsComponent,
     private val userTracker: UserTracker,
     private val customIconCache: CustomIconCache,

@@ -53,7 +53,6 @@ open class ControlsProviderSelectorActivity @Inject constructor(
     private val listingController: ControlsListingController,
     private val controlsController: ControlsController,
     private val globalActionsComponent: GlobalActionsComponent,
-    private val broadcastDispatcher: BroadcastDispatcher,
     private val userTracker: UserTracker,
     private val uiController: ControlsUiController
 ) : ComponentActivity() {
